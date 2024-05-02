@@ -3,6 +3,9 @@
   This file is intended to be loaded by Logisim-evolution v3.8.0(https://github.com/logisim-evolution/).
 
   <lib desc="#Wiring" name="0">
+    <tool name="Splitter">
+      <a name="facing" val="west"/>
+    </tool>
     <tool name="Pin">
       <a name="appearance" val="classic"/>
     </tool>
@@ -286,6 +289,15 @@
     </comp>
     <comp lib="0" loc="(100,1590)" name="Tunnel">
       <a name="label" val="INS_rtr_rF_rF_INV"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(100,1630)" name="Constant">
+      <a name="value" val="0x36"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(100,1630)" name="Tunnel">
+      <a name="label" val="INS_jmp_i8_i8"/>
       <a name="labelfont" val="SansSerif bold 10"/>
       <a name="width" val="8"/>
     </comp>
@@ -576,9 +588,20 @@
       <a name="labelfont" val="SansSerif bold 12"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="0" loc="(1130,1740)" name="Constant">
-      <a name="value" val="0x0"/>
-      <a name="width" val="8"/>
+    <comp lib="0" loc="(110,100)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="JMP_addr"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+      <a name="width" val="10"/>
+    </comp>
+    <comp lib="0" loc="(110,70)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="JMP_enable"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(1180,2010)" name="Splitter">
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
     </comp>
     <comp lib="0" loc="(1190,1130)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -1206,7 +1229,7 @@
       <a name="label" val="Registers_highbits_req2"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
-    <comp lib="0" loc="(220,240)" name="Tunnel">
+    <comp lib="0" loc="(220,270)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="rst"/>
     </comp>
@@ -2995,6 +3018,22 @@
       <a name="labelfont" val="SansSerif bold 10"/>
       <a name="width" val="8"/>
     </comp>
+    <comp lib="0" loc="(730,2260)" name="Splitter">
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp lib="0" loc="(730,2260)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Operand1Cache_out8SAFE"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(730,2300)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Operand2"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+      <a name="width" val="8"/>
+    </comp>
     <comp lib="0" loc="(7300,200)" name="Tunnel">
       <a name="label" val="loadToMem_AS8"/>
       <a name="labelfont" val="SansSerif bold 12"/>
@@ -3117,6 +3156,10 @@
       <a name="labelfont" val="SansSerif bold 12"/>
       <a name="width" val="8"/>
     </comp>
+    <comp lib="0" loc="(780,2280)" name="Splitter">
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
     <comp lib="0" loc="(7860,320)" name="Bit Extender">
       <a name="in_width" val="1"/>
       <a name="type" val="input"/>
@@ -3171,6 +3214,16 @@
       <a name="labelfont" val="SansSerif bold 12"/>
       <a name="width" val="8"/>
     </comp>
+    <comp lib="0" loc="(820,2170)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="10"/>
+      <a name="incoming" val="10"/>
+    </comp>
+    <comp lib="0" loc="(820,2170)" name="Tunnel">
+      <a name="label" val="JMP_addr"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+      <a name="width" val="10"/>
+    </comp>
     <comp lib="0" loc="(8230,230)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="INS_cmp_rF_i8_INV"/>
@@ -3201,6 +3254,26 @@
     </comp>
     <comp lib="0" loc="(8410,330)" name="Tunnel">
       <a name="label" val="FLAGS_write"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(8630,230)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="INS_jmp_i8_i8"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(8650,200)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="InstructionCache_out8SAFE"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(8730,360)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(8810,330)" name="Tunnel">
+      <a name="label" val="JMP_enable"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
     <comp lib="0" loc="(920,620)" name="Tunnel">
@@ -3256,7 +3329,7 @@
       <a name="control" val="left"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="1" loc="(1250,1720)" name="NOT Gate"/>
+    <comp lib="1" loc="(1240,1930)" name="NOT Gate"/>
     <comp lib="1" loc="(1270,1150)" name="AND Gate">
       <a name="width" val="8"/>
     </comp>
@@ -3747,6 +3820,14 @@
     <comp lib="1" loc="(8390,330)" name="OR Gate">
       <a name="inputs" val="5"/>
     </comp>
+    <comp lib="1" loc="(8790,330)" name="OR Gate">
+      <a name="inputs" val="5"/>
+    </comp>
+    <comp lib="1" loc="(890,1920)" name="OR Gate">
+      <a name="inputs" val="3"/>
+      <a name="size" val="30"/>
+      <a name="width" val="8"/>
+    </comp>
     <comp lib="1" loc="(910,1650)" name="AND Gate">
       <a name="size" val="70"/>
       <a name="width" val="8"/>
@@ -3759,7 +3840,6 @@
       <a name="size" val="70"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="12" loc="(1170,1720)" name="main"/>
     <comp lib="12" loc="(3030,200)" name="main"/>
     <comp lib="12" loc="(3030,240)" name="main"/>
     <comp lib="12" loc="(3030,280)" name="main"/>
@@ -3900,6 +3980,11 @@
     <comp lib="12" loc="(8290,320)" name="main"/>
     <comp lib="12" loc="(8290,360)" name="main"/>
     <comp lib="12" loc="(8290,400)" name="main"/>
+    <comp lib="12" loc="(8690,240)" name="main"/>
+    <comp lib="12" loc="(8690,280)" name="main"/>
+    <comp lib="12" loc="(8690,320)" name="main"/>
+    <comp lib="12" loc="(8690,360)" name="main"/>
+    <comp lib="12" loc="(8690,400)" name="main"/>
     <comp lib="2" loc="(3460,1690)" name="Demultiplexer">
       <a name="select" val="4"/>
     </comp>
@@ -4108,7 +4193,7 @@
     <comp lib="8" loc="(1120,210)" name="Text">
       <a name="text" val="Operand 2 "/>
     </comp>
-    <comp lib="8" loc="(1137,1314)" name="Text">
+    <comp lib="8" loc="(1135,1310)" name="Text">
       <a name="font" val="SansSerif bold 10"/>
       <a name="text" val="todo: other requests for reading here"/>
     </comp>
@@ -4132,12 +4217,12 @@
       <a name="font" val="SansSerif bold 30"/>
       <a name="text" val="Instructions"/>
     </comp>
-    <comp lib="8" loc="(1385,520)" name="Text">
-      <a name="text" val="Highbit selector"/>
-    </comp>
-    <comp lib="8" loc="(1442,1913)" name="Text">
+    <comp lib="8" loc="(1371,2072)" name="Text">
       <a name="font" val="SansSerif bold 10"/>
       <a name="text" val="Extends input to 16 bits. Fills with 0 if not requesting register. Otherwise reads highbits"/>
+    </comp>
+    <comp lib="8" loc="(1385,520)" name="Text">
+      <a name="text" val="Highbit selector"/>
     </comp>
     <comp lib="8" loc="(1555,200)" name="Text">
       <a name="text" val="Operand 1 LOCK"/>
@@ -4145,10 +4230,10 @@
     <comp lib="8" loc="(1650,285)" name="Text">
       <a name="text" val="delete"/>
     </comp>
-    <comp lib="8" loc="(1809,1802)" name="Text">
+    <comp lib="8" loc="(1805,1800)" name="Text">
       <a name="text" val="If ALU, feed alu instead of temp"/>
     </comp>
-    <comp lib="8" loc="(1823,2263)" name="Text">
+    <comp lib="8" loc="(1820,2260)" name="Text">
       <a name="text" val="using high math, on op2, and ALU is on"/>
     </comp>
     <comp lib="8" loc="(200,55)" name="Text">
@@ -4169,10 +4254,10 @@
       <a name="font" val="SansSerif bold 10"/>
       <a name="text" val="todo, these should all be and'ed with clock high to prevent timing errors"/>
     </comp>
-    <comp lib="8" loc="(2404,1123)" name="Text">
+    <comp lib="8" loc="(2400,1120)" name="Text">
       <a name="text" val="dont modify other flags"/>
     </comp>
-    <comp lib="8" loc="(2417,2422)" name="Text">
+    <comp lib="8" loc="(2415,2420)" name="Text">
       <a name="text" val="todo: set register select"/>
     </comp>
     <comp lib="8" loc="(2755,670)" name="Text">
@@ -4216,29 +4301,29 @@
     <comp lib="8" loc="(385,2025)" name="Text">
       <a name="text" val="seg -&gt; temp"/>
     </comp>
-    <comp lib="8" loc="(386,2135)" name="Text">
+    <comp lib="8" loc="(385,2135)" name="Text">
       <a name="text" val="immediate-&gt; temp"/>
     </comp>
-    <comp lib="8" loc="(3984,65)" name="Text">
+    <comp lib="8" loc="(3980,65)" name="Text">
       <a name="font" val="SansSerif bold 30"/>
       <a name="text" val="Instruction Decoder. Todo: rework so that each instruction enables different flags instead of this mess. This was originally for visualization reasons"/>
     </comp>
     <comp lib="8" loc="(4010,120)" name="Text">
       <a name="text" val="Enable register reading on high bits"/>
     </comp>
-    <comp lib="8" loc="(4029,1716)" name="Text">
+    <comp lib="8" loc="(4025,1715)" name="Text">
       <a name="text" val="todo: chain shift with higher bits on splitter"/>
     </comp>
-    <comp lib="8" loc="(4248,1439)" name="Text">
-      <a name="text" val="imm"/>
-    </comp>
-    <comp lib="8" loc="(4249,1294)" name="Text">
+    <comp lib="8" loc="(4245,1290)" name="Text">
       <a name="text" val="reg"/>
     </comp>
-    <comp lib="8" loc="(4250,1366)" name="Text">
+    <comp lib="8" loc="(4245,1435)" name="Text">
+      <a name="text" val="imm"/>
+    </comp>
+    <comp lib="8" loc="(4250,1365)" name="Text">
       <a name="text" val="memory (todo)"/>
     </comp>
-    <comp lib="8" loc="(4327,1151)" name="Text">
+    <comp lib="8" loc="(4325,1150)" name="Text">
       <a name="font" val="SansSerif bold 30"/>
       <a name="text" val="ALU Input Selector"/>
     </comp>
@@ -4248,7 +4333,7 @@
     <comp lib="8" loc="(4520,115)" name="Text">
       <a name="text" val="Enable memory segments"/>
     </comp>
-    <comp lib="8" loc="(4640,1674)" name="Text">
+    <comp lib="8" loc="(4640,1670)" name="Text">
       <a name="font" val="SansSerif bold 30"/>
       <a name="text" val="ALU Decoder"/>
     </comp>
@@ -4258,7 +4343,7 @@
     <comp lib="8" loc="(5030,120)" name="Text">
       <a name="text" val="Enable segment writing"/>
     </comp>
-    <comp lib="8" loc="(5103,1445)" name="Text">
+    <comp lib="8" loc="(5100,1445)" name="Text">
       <a name="font" val="SansSerif bold 12"/>
       <a name="text" val="0: 8low 1: 8high 2: 16full"/>
     </comp>
@@ -4277,7 +4362,7 @@
       <a name="font" val="SansSerif bold 10"/>
       <a name="text" val="implies loadFromRam"/>
     </comp>
-    <comp lib="8" loc="(5963,143)" name="Text">
+    <comp lib="8" loc="(5960,140)" name="Text">
       <a name="font" val="SansSerif bold 10"/>
       <a name="text" val="Reads from op1"/>
     </comp>
@@ -4288,7 +4373,7 @@
       <a name="font" val="SansSerif bold 10"/>
       <a name="text" val="Memory is always addressed by op1 or op2"/>
     </comp>
-    <comp lib="8" loc="(644,1487)" name="Text">
+    <comp lib="8" loc="(640,1485)" name="Text">
       <a name="font" val="SansSerif bold 30"/>
       <a name="text" val="Temporary Register loader / Input Selector"/>
     </comp>
@@ -4314,20 +4399,20 @@
     <comp lib="8" loc="(730,310)" name="Text">
       <a name="text" val="Address type selector"/>
     </comp>
-    <comp lib="8" loc="(7603,139)" name="Text">
+    <comp lib="8" loc="(7600,135)" name="Text">
       <a name="text" val="Enable inverted register read"/>
     </comp>
-    <comp lib="8" loc="(7607,157)" name="Text">
+    <comp lib="8" loc="(7605,155)" name="Text">
       <a name="font" val="SansSerif bold 10"/>
       <a name="text" val="Reads from op2"/>
     </comp>
     <comp lib="8" loc="(780,115)" name="Text">
       <a name="text" val="8 = least sig"/>
     </comp>
-    <comp lib="8" loc="(8243,149)" name="Text">
+    <comp lib="8" loc="(8240,145)" name="Text">
       <a name="text" val="Enable FLAGS write"/>
     </comp>
-    <comp lib="8" loc="(8247,167)" name="Text">
+    <comp lib="8" loc="(8245,165)" name="Text">
       <a name="font" val="SansSerif bold 10"/>
       <a name="text" val="Reads from op2"/>
     </comp>
@@ -4347,7 +4432,14 @@
       <a name="font" val="SansSerif bold 12"/>
       <a name="text" val="Note that either is zeroed if not on that op"/>
     </comp>
-    <comp lib="8" loc="(939,1253)" name="Text">
+    <comp lib="8" loc="(8640,145)" name="Text">
+      <a name="text" val="Enable uncond. jump"/>
+    </comp>
+    <comp lib="8" loc="(8645,165)" name="Text">
+      <a name="font" val="SansSerif bold 10"/>
+      <a name="text" val="Reads from op2"/>
+    </comp>
+    <comp lib="8" loc="(935,1250)" name="Text">
       <a name="font" val="SansSerif bold 10"/>
       <a name="text" val="If op2 requests reg read (inverted ins)"/>
     </comp>
@@ -4363,23 +4455,30 @@
     <wire from="(1070,450)" to="(1090,450)"/>
     <wire from="(1070,480)" to="(1090,480)"/>
     <wire from="(1070,640)" to="(1080,640)"/>
+    <wire from="(110,100)" to="(120,100)"/>
+    <wire from="(110,70)" to="(170,70)"/>
     <wire from="(1100,1720)" to="(1100,1760)"/>
-    <wire from="(1100,1720)" to="(1140,1720)"/>
     <wire from="(1100,1760)" to="(1270,1760)"/>
-    <wire from="(1130,1730)" to="(1130,1740)"/>
-    <wire from="(1130,1730)" to="(1140,1730)"/>
-    <wire from="(1170,1720)" to="(1190,1720)"/>
+    <wire from="(1150,1930)" to="(1150,2010)"/>
+    <wire from="(1150,2010)" to="(1180,2010)"/>
     <wire from="(1190,1130)" to="(1220,1130)"/>
     <wire from="(1190,1170)" to="(1220,1170)"/>
     <wire from="(1190,1230)" to="(1220,1230)"/>
     <wire from="(1190,1270)" to="(1220,1270)"/>
-    <wire from="(1190,1720)" to="(1190,1780)"/>
-    <wire from="(1190,1720)" to="(1220,1720)"/>
+    <wire from="(1190,1780)" to="(1250,1780)"/>
+    <wire from="(120,100)" to="(120,120)"/>
+    <wire from="(120,120)" to="(140,120)"/>
     <wire from="(1200,1790)" to="(1300,1790)"/>
+    <wire from="(1200,1820)" to="(1200,1930)"/>
+    <wire from="(1200,1820)" to="(1210,1820)"/>
+    <wire from="(1200,1930)" to="(1210,1930)"/>
+    <wire from="(1210,1720)" to="(1210,1820)"/>
+    <wire from="(1210,1720)" to="(1260,1720)"/>
     <wire from="(1210,990)" to="(1220,990)"/>
     <wire from="(1220,960)" to="(1240,960)"/>
     <wire from="(1220,990)" to="(1220,1000)"/>
-    <wire from="(1250,1720)" to="(1260,1720)"/>
+    <wire from="(1240,1930)" to="(1250,1930)"/>
+    <wire from="(1250,1780)" to="(1250,1930)"/>
     <wire from="(1270,1150)" to="(1340,1150)"/>
     <wire from="(1270,1250)" to="(1340,1250)"/>
     <wire from="(1270,1710)" to="(1300,1710)"/>
@@ -4407,6 +4506,8 @@
     <wire from="(1390,1710)" to="(1430,1710)"/>
     <wire from="(1390,1790)" to="(1400,1790)"/>
     <wire from="(1390,200)" to="(1400,200)"/>
+    <wire from="(140,120)" to="(140,130)"/>
+    <wire from="(140,130)" to="(190,130)"/>
     <wire from="(1400,1800)" to="(1400,1890)"/>
     <wire from="(1410,370)" to="(1450,370)"/>
     <wire from="(1410,440)" to="(1450,440)"/>
@@ -4449,11 +4550,13 @@
     <wire from="(1610,620)" to="(1610,630)"/>
     <wire from="(1610,620)" to="(1640,620)"/>
     <wire from="(1670,780)" to="(2010,780)"/>
+    <wire from="(170,120)" to="(190,120)"/>
     <wire from="(170,170)" to="(170,180)"/>
     <wire from="(170,170)" to="(240,170)"/>
     <wire from="(170,180)" to="(170,210)"/>
     <wire from="(170,180)" to="(180,180)"/>
     <wire from="(170,210)" to="(190,210)"/>
+    <wire from="(170,70)" to="(170,120)"/>
     <wire from="(1760,230)" to="(1830,230)"/>
     <wire from="(1810,1830)" to="(1820,1830)"/>
     <wire from="(1810,190)" to="(1850,190)"/>
@@ -4795,6 +4898,7 @@
     <wire from="(2190,1590)" to="(2200,1590)"/>
     <wire from="(220,130)" to="(240,130)"/>
     <wire from="(220,160)" to="(220,240)"/>
+    <wire from="(220,240)" to="(220,270)"/>
     <wire from="(2210,230)" to="(2280,230)"/>
     <wire from="(2220,190)" to="(2290,190)"/>
     <wire from="(2230,100)" to="(2230,170)"/>
@@ -6239,7 +6343,7 @@
     <wire from="(7180,310)" to="(7200,310)"/>
     <wire from="(7190,230)" to="(7190,300)"/>
     <wire from="(7190,300)" to="(7200,300)"/>
-    <wire from="(720,1990)" to="(840,1990)"/>
+    <wire from="(720,1990)" to="(820,1990)"/>
     <wire from="(720,2030)" to="(840,2030)"/>
     <wire from="(720,350)" to="(720,390)"/>
     <wire from="(720,390)" to="(740,390)"/>
@@ -6253,6 +6357,7 @@
     <wire from="(7290,200)" to="(7290,220)"/>
     <wire from="(7290,200)" to="(7300,200)"/>
     <wire from="(7290,220)" to="(7330,220)"/>
+    <wire from="(730,2300)" to="(780,2300)"/>
     <wire from="(730,340)" to="(730,360)"/>
     <wire from="(730,360)" to="(740,360)"/>
     <wire from="(7300,240)" to="(7300,250)"/>
@@ -6285,6 +6390,8 @@
     <wire from="(7480,640)" to="(7620,640)"/>
     <wire from="(7480,680)" to="(7620,680)"/>
     <wire from="(750,1630)" to="(760,1630)"/>
+    <wire from="(750,2180)" to="(800,2180)"/>
+    <wire from="(750,2190)" to="(800,2190)"/>
     <wire from="(7590,220)" to="(7590,230)"/>
     <wire from="(7590,230)" to="(7620,230)"/>
     <wire from="(7590,260)" to="(7600,260)"/>
@@ -6367,6 +6474,7 @@
     <wire from="(780,1840)" to="(790,1840)"/>
     <wire from="(780,1860)" to="(780,1900)"/>
     <wire from="(780,1860)" to="(790,1860)"/>
+    <wire from="(780,2280)" to="(780,2300)"/>
     <wire from="(780,750)" to="(790,750)"/>
     <wire from="(7800,320)" to="(7800,420)"/>
     <wire from="(7800,320)" to="(7810,320)"/>
@@ -6379,9 +6487,9 @@
     <wire from="(7910,320)" to="(7910,340)"/>
     <wire from="(7910,340)" to="(7950,340)"/>
     <wire from="(7930,300)" to="(7950,300)"/>
-    <wire from="(810,1630)" to="(840,1630)"/>
+    <wire from="(810,1630)" to="(820,1630)"/>
     <wire from="(810,1670)" to="(840,1670)"/>
-    <wire from="(810,1750)" to="(840,1750)"/>
+    <wire from="(810,1750)" to="(830,1750)"/>
     <wire from="(8120,210)" to="(8120,250)"/>
     <wire from="(8120,210)" to="(8250,210)"/>
     <wire from="(8120,250)" to="(8120,290)"/>
@@ -6393,7 +6501,13 @@
     <wire from="(8120,370)" to="(8120,410)"/>
     <wire from="(8120,370)" to="(8260,370)"/>
     <wire from="(8120,410)" to="(8260,410)"/>
+    <wire from="(820,1600)" to="(820,1630)"/>
+    <wire from="(820,1600)" to="(860,1600)"/>
+    <wire from="(820,1630)" to="(840,1630)"/>
     <wire from="(820,1850)" to="(830,1850)"/>
+    <wire from="(820,1930)" to="(820,1990)"/>
+    <wire from="(820,1930)" to="(860,1930)"/>
+    <wire from="(820,1990)" to="(840,1990)"/>
     <wire from="(8230,230)" to="(8230,240)"/>
     <wire from="(8230,240)" to="(8260,240)"/>
     <wire from="(8230,270)" to="(8240,270)"/>
@@ -6413,6 +6527,9 @@
     <wire from="(8290,320)" to="(8310,320)"/>
     <wire from="(8290,360)" to="(8310,360)"/>
     <wire from="(830,1370)" to="(880,1370)"/>
+    <wire from="(830,1750)" to="(830,1770)"/>
+    <wire from="(830,1750)" to="(840,1750)"/>
+    <wire from="(830,1770)" to="(850,1770)"/>
     <wire from="(830,1790)" to="(830,1850)"/>
     <wire from="(830,1790)" to="(840,1790)"/>
     <wire from="(8310,320)" to="(8310,330)"/>
@@ -6428,8 +6545,55 @@
     <wire from="(8330,350)" to="(8330,360)"/>
     <wire from="(8330,350)" to="(8340,350)"/>
     <wire from="(8390,330)" to="(8410,330)"/>
+    <wire from="(850,1770)" to="(850,1920)"/>
+    <wire from="(850,1920)" to="(860,1920)"/>
+    <wire from="(8520,210)" to="(8520,250)"/>
+    <wire from="(8520,210)" to="(8650,210)"/>
+    <wire from="(8520,250)" to="(8520,290)"/>
+    <wire from="(8520,250)" to="(8660,250)"/>
+    <wire from="(8520,290)" to="(8520,330)"/>
+    <wire from="(8520,290)" to="(8660,290)"/>
+    <wire from="(8520,330)" to="(8520,370)"/>
+    <wire from="(8520,330)" to="(8660,330)"/>
+    <wire from="(8520,370)" to="(8520,410)"/>
+    <wire from="(8520,370)" to="(8660,370)"/>
+    <wire from="(8520,410)" to="(8660,410)"/>
+    <wire from="(860,1600)" to="(860,1910)"/>
+    <wire from="(8630,230)" to="(8630,240)"/>
+    <wire from="(8630,240)" to="(8660,240)"/>
+    <wire from="(8630,270)" to="(8640,270)"/>
+    <wire from="(8630,310)" to="(8630,320)"/>
+    <wire from="(8630,320)" to="(8660,320)"/>
+    <wire from="(8630,350)" to="(8640,350)"/>
+    <wire from="(8630,390)" to="(8640,390)"/>
+    <wire from="(8640,270)" to="(8640,280)"/>
+    <wire from="(8640,280)" to="(8660,280)"/>
+    <wire from="(8640,350)" to="(8640,360)"/>
+    <wire from="(8640,360)" to="(8660,360)"/>
+    <wire from="(8640,390)" to="(8640,400)"/>
+    <wire from="(8640,400)" to="(8660,400)"/>
+    <wire from="(8650,200)" to="(8650,210)"/>
+    <wire from="(8690,240)" to="(8730,240)"/>
+    <wire from="(8690,320)" to="(8710,320)"/>
+    <wire from="(8690,360)" to="(8710,360)"/>
+    <wire from="(8710,320)" to="(8710,330)"/>
+    <wire from="(8710,340)" to="(8710,360)"/>
+    <wire from="(8730,240)" to="(8730,310)"/>
+    <wire from="(8730,310)" to="(8740,310)"/>
+    <wire from="(8730,320)" to="(8730,330)"/>
+    <wire from="(8730,320)" to="(8740,320)"/>
+    <wire from="(8730,330)" to="(8730,340)"/>
+    <wire from="(8730,330)" to="(8740,330)"/>
+    <wire from="(8730,340)" to="(8730,350)"/>
+    <wire from="(8730,340)" to="(8740,340)"/>
+    <wire from="(8730,350)" to="(8730,360)"/>
+    <wire from="(8730,350)" to="(8740,350)"/>
+    <wire from="(8790,330)" to="(8810,330)"/>
+    <wire from="(890,1920)" to="(910,1920)"/>
     <wire from="(910,1650)" to="(920,1650)"/>
     <wire from="(910,1770)" to="(920,1770)"/>
+    <wire from="(910,1920)" to="(910,1930)"/>
+    <wire from="(910,1930)" to="(1150,1930)"/>
     <wire from="(910,2010)" to="(940,2010)"/>
     <wire from="(920,1650)" to="(920,1690)"/>
     <wire from="(920,1690)" to="(1000,1690)"/>
