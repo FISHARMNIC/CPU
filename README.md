@@ -7,7 +7,8 @@
 
 # Documentation [here](https://docs.google.com/document/d/1zHQLODf5kYBa-Lo_Y2UcSC72ngJ54vJQ80xLCT8P8R8/edit?usp=sharing)
 
-<img width="970" alt="Screen Shot 2024-06-21 at 9 59 56 AM" src="https://github.com/FISHARMNIC/CPU/assets/73864341/d0a4aa3b-3daa-406f-abcc-45b0cf61d57b">
+![pic](https://github.com/user-attachments/assets/6fe64c12-ffa3-4dee-9efc-b6a63312b0ae)
+
 
 # How to Run
 * Download all `.circ` files
