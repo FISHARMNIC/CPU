@@ -15,6 +15,8 @@
 # How to Run
 * Download all `.circ` files
 * Load CPU.circ into logisim
+* Click reset button (top left next to RAM)
 * Example programs (load into PROGRAM RAM):
   * `interrupt.bin` loads r2 with the joystick when there is an interrupt
   * `display_joy.bin` Puts the joystick data on the display when there is an interrupt
+* Enable clock ticks
