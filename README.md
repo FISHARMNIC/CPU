@@ -12,4 +12,6 @@
 # How to Run
 * Download all `.circ` files
 * Load CPU.circ into logisim
-* For an example program that loads r2 with the joystick when there is an interrupt, load `interrupt.bin` into PROGRAM RAM
+* Example programs (load into PROGRAM RAM):
+  * `interrupt.bin` loads r2 with the joystick when there is an interrupt
+  * `display_joy.bin` Puts the joystick data on the display when there is an interrupt
