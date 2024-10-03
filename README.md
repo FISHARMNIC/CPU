@@ -13,6 +13,7 @@
 
 
 # How to Run
+* Download and install *Logisim Evolution*
 * Download all `.circ` files
 * Load CPU.circ into logisim
 * Click reset button (top left next to RAM)
